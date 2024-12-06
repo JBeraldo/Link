@@ -4,7 +4,7 @@ A simple and lightweight PHP Framework
 
 ## Motivation
     Why?
-Because we like to go fast!!!
+Because we like to go FAST!!!
 
     Should i use it in production?
 NO, USE IT AT YOUR OWN RISK I WILL NOT PROVIDE SUPPORT
