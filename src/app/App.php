@@ -2,12 +2,14 @@
 
 namespace Link\App;
 
+use FastRoute\Dispatcher;
+use Link\Http\Request;
 use Swoole\Http\Server;
 
 class App
 {
     public function __construct(
-    //    private Dispatcher $dispatcher,
+        private Dispatcher $dispatcher,
         private readonly Server $server,
     )
     {
@@ -20,6 +22,10 @@ class App
 
     public function onRequest($request,$response): void
     {
-        $response->end('pong');
+        $method = $server['request_method'] ?? 'GET';;
+
+        $return = $this->dispatcher->dispatch($method, '/banana');
+
+        $response->end(print_r($return, true));
     }
 }
