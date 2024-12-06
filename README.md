@@ -3,7 +3,7 @@
 A simple and lightweight PHP Framework 
 
 ## Motivation
-    Why build a Web PHP framework in 2024?
+    Why?
 Because we like to go fast!!!
 
     Should i use it in production?
