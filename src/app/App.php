@@ -2,9 +2,6 @@
 
 namespace Link\App;
 
-use FastRoute\Dispatcher;
-use Link\contract\AppInterface;
-use Link\Server\ServerFactory;
 use Swoole\Http\Server;
 
 class App
